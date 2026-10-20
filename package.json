@@ -1,0 +1,27 @@
+{
+  "name": "receipt",
+  "version": "0.1.0",
+  "description": "Erklärt eine gespeicherte Solana-Transaktion als kurzen deutschen Absatz.",
+  "license": "MIT",
+  "author": "Patric Wagner",
+  "type": "module",
+  "bin": {
+    "receipt": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli.ts",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
